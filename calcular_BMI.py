@@ -31,5 +31,6 @@ def calcular_BMI(peso_en_libras: float, estatura_en_pulgadas: float)-> float:
     
 peso_en_libras = float(input("Enter your weight in pounds : "))
 estatura_en_pulgadas = float(input("Enter your height in inches: "))
-
-print("Your body mass index is: " , calcular_BMI(peso_en_libras, estatura_en_pulgadas))
+indice = calcular_BMI(peso_en_libras , estatura_en_pulgadas)
+print("su imc es: ", indice)
+#print("Your body mass index is: " , calcular_BMI(peso_en_libras, estatura_en_pulgadas))

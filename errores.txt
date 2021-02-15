@@ -1,0 +1,27 @@
+
+Caso 1
+Se calcula correctamente la edad cuando consiste solamente de días
+-----------------------
+Caso 2
+Su programa falló cuando se usaron estas entradas: 
+dia_nacio = 28
+mes_nacio = 12
+anio_nacio = 2004
+dia_actual = 28
+mes_actual = 3
+anio_actual = 2005
+Su programa respondió: 0,3,5
+-----------------------
+Caso 3
+Su programa falló cuando se usaron estas entradas: 
+dia_nacio = 25
+mes_nacio = 10
+anio_nacio = 1993
+dia_actual = 4
+mes_actual = 8
+anio_actual = 2019
+Su programa respondió: 25,9,14
+-----------------------
+Caso 4
+Al probar con las fechas 25/10/1993 y 4/8/2019, el resultado obtenido no fue el esperado: debería ser '25,9,9' y fue '25,9,14'. 
+-----------------------
