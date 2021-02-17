@@ -13,6 +13,8 @@ def calcular_horario_llegada(hora_salida: int, minuto_salida: int, segundo_salid
     minuto_llegada = (minuto_salida + duracion_minuto + output_segundo_llegada)%60
     output_minuto_llegada =(minuto_salida + duracion_minuto)//60
     
-    hora_llegada = hora_salida + duracion_horas + output_minuto_llegada
+    hora_llegada = (hora_salida + duracion_horas + output_minuto_llegada) % 24
+    
+    
     
     return hora_llegada, minuto_llegada, segundo_llegada

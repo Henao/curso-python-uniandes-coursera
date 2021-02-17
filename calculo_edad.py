@@ -10,10 +10,11 @@ def calcular_edad(dia_nacio: int, mes_nacio: int, anio_nacio: int, dia_actual: i
     dia_def = dia_actual - dia_nacio
     dias_total = anio_def + mes_def + dia_def
     anio = dias_total // 365
-    dias_total = dias_total - (anio * 365)
+    dias_total = dias_total % 365
     mes = dias_total // 30
-    dias_total = dias_total - (mes * 30)
-    dia = dias_total
+    dias_total = dias_total % 30
+    dia =((30 - dia_nacio) + dia_actual) % 30
+   # diadef = dia % 30
     edad = "Su edad es" + str(anio) +" años" + str(mes) +" meses y " + str(dia) + " días"
     return edad
 
